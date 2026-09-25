@@ -2,7 +2,7 @@ import "../styles/banner.css";
 
 import Card from "./Card";
 
-import firebase from "firebase/compat/app";
+import firebase from "../firebase";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 import logo from "../images/icons/home.png";
