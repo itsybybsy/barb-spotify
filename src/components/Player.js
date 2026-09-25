@@ -1,7 +1,7 @@
 import "../styles/player.css";
 import Card from "./Card";
 
-import firebase from "firebase/compat/app";
+import firebase from "../firebase";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 import play from "../images/icons/player/play.png";
