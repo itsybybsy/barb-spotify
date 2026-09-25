@@ -1,7 +1,7 @@
 import "../styles/nav.css";
 import Card from "./Card";
 
-import firebase from "firebase/compat/app";
+import firebase from "../firebase";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 function NavAlbums() {
