@@ -5,7 +5,6 @@ import App from "./App";
 
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
-import { getStorage } from "firebase/storage";
 
 firebase.initializeApp({
   apiKey: "AIzaSyB81X6YmTAniTzm0PAgHbzj2W3ZP2OqiLk",
@@ -16,8 +15,6 @@ firebase.initializeApp({
   appId: "1:264151726732:web:fc864ead06cd69b77a99a9",
   measurementId: "G-7L47B510W7",
 });
-
-const storage = getStorage(firebase.app());
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
