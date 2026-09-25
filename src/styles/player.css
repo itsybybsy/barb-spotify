@@ -1,0 +1,93 @@
+.player-container {
+  width: 100%;
+  background: #000;
+  position: fixed;
+  bottom: 0;
+}
+
+.player-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 25px;
+}
+
+.current-album {
+  display: flex;
+  flex-direction: row;
+}
+
+.current-album .list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 0;
+}
+
+.current-album .album-content {
+  margin-left: 10px;
+}
+
+.current-album .album-img {
+  max-width: 60px;
+  min-width: 60px;
+  height: auto;
+}
+
+.current-album .album-name,
+.album-info {
+  font-size: 16px;
+}
+
+/* PLAY ME part */
+
+.player-wrapper {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-album,
+.player-icons {
+  width: 35%;
+}
+
+.hover-play {
+  width: 35%;
+}
+
+.settings-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.timeline-player {
+  display: flex;
+  align-items: center;
+}
+
+.timeline-player span {
+  font-size: 12px;
+}
+
+.timeline {
+  width: 350px;
+  height: 5px;
+  background: white;
+  border-radius: 7px;
+  margin: 0 10px;
+}
+
+.settings-player-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings-player-right .timeline {
+  width: 100px;
+}

@@ -1,0 +1,150 @@
+/* BANNER */
+.wrapper-banner {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  height: 100%;
+}
+
+.wrapper-banner .block-section {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.buttons-group,
+.links-group {
+  margin-bottom: 20px;
+}
+
+.links-group {
+  justify-content: space-between;
+  margin-right: 25px;
+}
+
+.links-group .mr-0 {
+  margin-right: 0;
+}
+
+.banner-button {
+  width: auto;
+  height: auto;
+  background: #323232;
+  outline: none;
+  border: none;
+  padding: 7px 16px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.wrapper-banner h1 {
+  color: #fff;
+}
+
+.wrapper-banner a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0;
+}
+
+.banner-section .list-icon:last-child {
+  margin-bottom: 0;
+}
+
+/* APPLIES TO ALL ICONS with that class */
+
+.list-icon {
+  display: flex;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.list-icon a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.icon {
+  margin-right: 20px;
+}
+
+/* Banner Scrollbar */
+
+.sub-list-banner {
+  overflow-y: scroll !important;
+}
+
+.sub-list-banner::-webkit-scrollbar {
+  width: 10px;
+}
+
+.sub-list-banner::-webkit-scrollbar-track {
+  background-color: #121212;
+}
+
+.sub-list-banner::-webkit-scrollbar-thumb {
+  background-color: #404040;
+}
+
+.sub-list-banner .list-icon {
+  justify-content: space-between;
+}
+
+.album-banner-wrapper {
+  padding-bottom: 120px;
+}
+
+.album-banner-list .list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  color: #fff;
+}
+
+.album-banner-list .list-item:first-child .album-name {
+  color: #1ed760;
+}
+
+.album-banner-list .album-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.album-banner-list .album-info {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.album-banner-list .list-item:first-child .album-info {
+  display: flex;
+  align-items: center;
+}
+
+.album-banner-list .list-item:first-child .album-info:before {
+  content: "";
+  display: inline-block;
+  background-image: url("https://uploads.codesandbox.io/uploads/user/506f056b-abd6-4317-947d-d32f174aef09/VD-C-pin.png");
+  /* background-image: url('../images/icons/pin.png'); */
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+}
+
+.album-banner-list .album-img {
+  max-width: 70px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.album-banner-list .album-content {
+  margin: 5px 0 10px 10px;
+}

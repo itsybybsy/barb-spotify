@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --font: "Figtree", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+
+.mb-s {
+  margin-bottom: 10px;
+}
+
+.mb-m {
+  margin-bottom: 20px;
+}
+
+.ml-s {
+  margin-left: 10px;
+}
+
+.ml-m {
+  margin-left: 30px;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.mr-s {
+  margin-right: 10px;
+}
+
+.mr-m {
+  margin-right: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  opacity: 0.8;
+}
+
+.icon-s {
+  width: 18px;
+  height: 18px;
+}
+
+.icon-b {
+  width: 40px;
+  height: 40px;
+}
+
+/* Icon radius */
+
+.icon-r {
+  background: #000000;
+  padding: 7px;
+  border-radius: 50%;
+}
+
+/* Icon bottom centered */
+
+.icon-bc {
+  margin-bottom: -5px;
+}
+
+/* Icon left centered */
+
+.icon-lc {
+  margin-left: -5px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.block-section {
+  background: #121212;
+  border-radius: 20px;
+  margin: 10px 10px 0 10px;
+  padding: 20px 10px;
+}
+
+.album-content {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.album-info {
+  opacity: 0.8;
+}
+
+.slider-player {
+  width: 100%;
+  background: pink;
+  position: fixed;
+  bottom: -100px;
+  left: 0;
+  height: 140px;
+  z-index: 10;
+}

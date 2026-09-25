@@ -1,0 +1,39 @@
+.hover-play {
+  width: 35%;
+}
+
+.nav-albums-wrapper .hover {
+  display: none;
+}
+
+.album-banner-wrapper .hover {
+  display: none;
+}
+
+.list-wrapper .hover {
+  width: 100%;
+  max-width: 125px;
+  height: 125px;
+  border-radius: 15px;
+  position: relative;
+  top: -125px;
+  left: 5px;
+}
+
+.hover .hover-play {
+  position: relative;
+  bottom: -70px;
+  right: -65px;
+}
+
+.container .img-hover-wrap {
+  width: 100%;
+  max-width: 125px;
+  height: 125px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.list-wrapper .album-img {
+  position: relative;
+}

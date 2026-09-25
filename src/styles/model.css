@@ -1,0 +1,47 @@
+.overlay {
+  position: fixed;
+  top: 100px;
+  right: 46px;
+  z-index: 10000;
+  width: auto;
+  height: auto;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 10px 2px rgb(0 0 0 / 30%);
+}
+
+.pop-up {
+  width: 200px;
+  position: relative;
+  background-color: #282828;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 5px;
+}
+
+.pop-up ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.pop-up ul li {
+  list-style: none;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.pop-up ul li:last-child {
+  margin-bottom: 0;
+}
+
+.pop-up ul li:hover {
+  background-color: #5c5c5c;
+}
