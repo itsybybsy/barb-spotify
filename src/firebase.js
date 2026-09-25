@@ -2,7 +2,7 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 
 const firebaseConfig = {
-  apiKey: "YOUR_EXISTING_API_KEY",
+  apiKey: "YOUR_REAL_AIZA_KEY_HERE",
   authDomain: "spotify-5ede7.firebaseapp.com",
   projectId: "spotify-5ede7",
   storageBucket: "spotify-5ede7.appspot.com",
