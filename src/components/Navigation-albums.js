@@ -1,13 +1,9 @@
 import "../styles/nav.css";
 import Card from "./Card";
 
-import firebase from "../firebase";
-import { useCollectionData } from "react-firebase-hooks/firestore";
+import { saved_albums } from "../data";
 
 function NavAlbums() {
-  const savedAlbRef = firebase.firestore().collection("saved_albums");
-  const [saved_albums] = useCollectionData(savedAlbRef, { idField: "id" });
-
   return (
     <>
       <div className="nav-albums-wrapper">
@@ -17,17 +13,17 @@ function NavAlbums() {
           <button className="banner-button">podcast</button>
           <button className="banner-button">Audiobooks</button>
         </div>
+
         <div className="flex-row albums-group">
           <div className="box-album">
-            {saved_albums &&
-              saved_albums.map((saved_albums) => (
-                <Card
-                  image={saved_albums.img}
-                  name={saved_albums.name}
-                  info={saved_albums.info}
-                  key={saved_albums.id}
-                />
-              ))}
+            {saved_albums.map((album) => (
+              <Card
+                image={album.image}
+                name={album.name}
+                info={album.info}
+                key={album.id}
+              />
+            ))}
           </div>
         </div>
       </div>

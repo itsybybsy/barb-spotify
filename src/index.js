@@ -1,7 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import "./firebase";
 import App from "./App";
 
 const rootElement = document.getElementById("root");

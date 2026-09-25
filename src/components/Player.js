@@ -1,8 +1,7 @@
 import "../styles/player.css";
 import Card from "./Card";
 
-import firebase from "../firebase";
-import { useCollectionData } from "react-firebase-hooks/firestore";
+import { saved_albums } from "../data";
 
 import play from "../images/icons/player/play.png";
 import prev from "../images/icons/player/prev.png";
@@ -18,10 +17,8 @@ import window from "../images/icons/player/new-window.png";
 import expand from "../images/icons/player/expand.png";
 
 function Player() {
-  const savedAlbRef = firebase.firestore().collection("saved_albums");
-  const [saved_albums] = useCollectionData(savedAlbRef, { idField: "id" });
-  //for player only one album
-  const singleAlbum = saved_albums && saved_albums[2];
+  // For player only one album
+  const singleAlbum = saved_albums[2];
 
   return (
     <div className="player-container">
@@ -29,7 +26,7 @@ function Player() {
         <div className="current-album">
           {singleAlbum && (
             <Card
-              image={singleAlbum.img}
+              image={singleAlbum.image}
               name={singleAlbum.name}
               info={singleAlbum.info}
               key={singleAlbum.id}
@@ -48,6 +45,7 @@ function Player() {
                 <img className="icon icon-s icon-bc" src={repeat} />
               </div>
             </div>
+
             <div className="bottom-player">
               <div className="timeline-player">
                 <span className="time-start">0:44</span>

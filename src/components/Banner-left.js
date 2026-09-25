@@ -1,9 +1,7 @@
 import "../styles/banner.css";
 
 import Card from "./Card";
-
-import firebase from "../firebase";
-import { useCollectionData } from "react-firebase-hooks/firestore";
+import { saved_albums } from "../data";
 
 import logo from "../images/icons/home.png";
 import search from "../images/icons/search.png";
@@ -13,9 +11,6 @@ import more from "../images/icons/more-arrow.png";
 import list from "../images/icons/list.png";
 
 function Banner() {
-  const savedAlbRef = firebase.firestore().collection("saved_albums");
-  const [saved_albums] = useCollectionData(savedAlbRef, { idField: "id" });
-
   return (
     <>
       <div className="wrapper-banner">
@@ -26,6 +21,7 @@ function Banner() {
               Home
             </a>
           </div>
+
           <div className="list-icon mb-m">
             <a href="#">
               <img src={search} className="icon" />
@@ -38,10 +34,11 @@ function Banner() {
           <div className="list-icon mb-m">
             <div className="flex-row">
               <a href="#">
-                <img src={library} className="icon icon-b icon-lc" /> Your
-                Library
+                <img src={library} className="icon icon-b icon-lc" />
+                Your Library
               </a>
             </div>
+
             <div className="flex-row">
               <a href="#">
                 <img src={create} className="icon icon-s" />
@@ -51,14 +48,17 @@ function Banner() {
               </a>
             </div>
           </div>
+
           <div className="flex-row buttons-group">
             <button className="banner-button">Playlist</button>
             <button className="banner-button">Albums</button>
           </div>
+
           <div className="flex-row links-group">
             <a href="#">
               <img src={search} className="icon icon-s" />
             </a>
+
             <a href="#">
               Recent
               <img src={list} className="icon icon-s icon-bc ml-s mr-0" />
@@ -67,15 +67,14 @@ function Banner() {
 
           <div className="album-banner-wrapper">
             <div className="album-banner-list">
-              {saved_albums &&
-                saved_albums.map((saved_albums) => (
-                  <Card
-                    image={saved_albums.img}
-                    name={saved_albums.name}
-                    info={saved_albums.info}
-                    key={saved_albums.id}
-                  />
-                ))}
+              {saved_albums.map((album) => (
+                <Card
+                  image={album.image}
+                  name={album.name}
+                  info={album.info}
+                  key={album.id}
+                />
+              ))}
             </div>
           </div>
         </div>

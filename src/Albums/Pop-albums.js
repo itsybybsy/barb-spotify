@@ -4,12 +4,9 @@ import Card from "../components/Card.js";
 import Footer from "../components/Footer.js";
 import Player from "../components/Player.js";
 
-import firebase from "../firebase";
-import { useCollectionData } from "react-firebase-hooks/firestore";
+import { albums } from "../data";
 
-function RetroAlbums() {
-  const popAlbums = firebase.firestore().collection("all_pop_albums");
-  const [all_pop_albums] = useCollectionData(popAlbums, { idField: "id" });
+function PopAlbums() {
   return (
     <>
       <Nav />
@@ -18,16 +15,16 @@ function RetroAlbums() {
       <div className="album container">
         <div className="content-wrapper">
           <h2 className="ml-s">POP Albums</h2>
+
           <div className="list-wrapper">
-            {all_pop_albums &&
-              all_pop_albums.map((all_pop_albums) => (
-                <Card
-                  image={all_pop_albums.img}
-                  name={all_pop_albums.name}
-                  info={all_pop_albums.info}
-                  key={all_pop_albums.id}
-                />
-              ))}
+            {albums.pop_albums.map((album) => (
+              <Card
+                image={album.image}
+                name={album.name}
+                info={album.info}
+                key={album.id}
+              />
+            ))}
 
             <Footer />
           </div>
@@ -39,4 +36,4 @@ function RetroAlbums() {
   );
 }
 
-export default RetroAlbums;
+export default PopAlbums;
