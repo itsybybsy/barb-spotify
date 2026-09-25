@@ -4,7 +4,7 @@ import Card from "../components/Card.js";
 import Footer from "../components/Footer.js";
 import Player from "../components/Player.js";
 
-import firebase from "firebase/compat/app";
+import firebase from "../firebase";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 function MoodAlbums() {
