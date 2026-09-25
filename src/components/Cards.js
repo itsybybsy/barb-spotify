@@ -2,8 +2,6 @@ import Card from "./Card";
 import Footer from "./Footer.js";
 import "../styles/content.css";
 
-import { albums } from "/src/data";
-
 import firebase from "firebase/compat/app";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
