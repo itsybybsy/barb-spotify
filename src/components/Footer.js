@@ -68,7 +68,7 @@ function Footer() {
                             <li><a>Accessibility</a></li>
                         </ul>
                         <div className="copyright">
-                            <p>© 2024 Spotify AB</p>
+                            <p>© 2024 Barbora M.</p>
                         </div>
                     </div>
                 </div>
